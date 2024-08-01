@@ -9,23 +9,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.server.UserService;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class LoginController {
-    @Autowired
-    private UserService userService;
 
-    @GetMapping("/")
-    public String login() {
-        return "login";
+   
+
+    @GetMapping("/login")
+    public String login(HttpSession session) {
+        session.invalidate();  
+        return "login";  
     }
 
-    @PostMapping("/login")
-    public String login(@RequestParam String username, @RequestParam String password, Model model) {
-        if (userService.authenticate(username, password)) {
-            return "welcome";
-        } else {
-            model.addAttribute("error", "請輸入正確的帳號密碼");
-            return "login";
-        }
+ 
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "welcome";  
     }
+
+   
 }

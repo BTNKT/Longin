@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="/demo/css/styles.css">
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <a href=".">Go Home</a>
+     <p th:text="'Hello, ' + ${session.user} + '!'"></p>
+    <a href="/demo/login">Logout</a>
 </body>
 </html>
