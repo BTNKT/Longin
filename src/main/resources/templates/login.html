@@ -27,25 +27,30 @@
 <body>
 	<div
 		class="bg-dark d-flex justify-content-center align-items-center vh-100">
-		<div  class="text-left">
-		<img class="mb-4" src="https://tw.systex.com/wp-content/uploads/sites/2/2016/04/logo-zn-275x30.png" >
-		<h1 style="color: white;" class="h3 mb-3 fw-normal">Please sign in</h1>
-		<form id="loginForm">
-			<div class="form-floating">
-				
-				<input type="text" id="username" name="username" required class="form-control "  style="background-color: black; color: white;">
-				<label for="username" class="text-secondary" >Username:</label>
-			</div>
-			<div class="form-floating">
-				
-				<input type="password" id="password" name="password" required class="form-control" style="background-color: black; color: white;">
-				<label for="password" class="text-secondary " >Password:</label>
+		<div class="text-left">
+			<img class="mb-4"
+				src="https://tw.systex.com/wp-content/uploads/sites/2/2016/04/logo-zn-275x30.png">
+			<h1 style="color: white;" class="h3 mb-3 fw-normal">Please sign
+				in</h1>
+			<form id="loginForm">
+				<div class="form-floating ">
+ 
+					<input class="form-control" type="text" id="username" name="username" placeholder="" required style="background-color: black; color: white;"> 
+					<label for="username" class="text-secondary">Username:</label>
 				</div>
-					<button type="submit" class="btn btn-primary w-100 py-2">Login</button>
-		</form>
-		<div id="error-message" class="error"></div>
+				<div class="form-floating mb-3">
+
+					<input type="password" id="password" name="password" required placeholder=""
+						class="form-control"
+						style="background-color: black; color: white;"> <label
+						for="password" class="text-secondary ">Password:</label>
+				</div>
+				<button type="submit" class="btn btn-primary w-100 py-2">Sign in</button>
+			</form>
+			<div id="error-message" class="error"></div>
+		</div>
 	</div>
-</div>>
+	>
 
 </body>
 </html>
