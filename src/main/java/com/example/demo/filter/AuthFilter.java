@@ -45,7 +45,6 @@ public class AuthFilter implements Filter {
 				httpRequest.getSession().setAttribute("user", username);
 				httpResponse.getWriter().write("{\"success\": true}");
 			} else {
-				
 				httpResponse.getWriter().write("{\"success\": false, \"message\": \"帳號密碼錯誤\"}");
 			}
 			return;
