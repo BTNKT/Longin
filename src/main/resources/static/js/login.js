@@ -14,9 +14,7 @@ $(document).ready(function() {
 					$('#error-message').text(response.message); 
 				}
 			},
-			error: function(xhr, status, error) {
-				$('#error-message').text('帳號密碼錯誤請再輸入一次');
-			}
+			
 		});
 	});
 });
