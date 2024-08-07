@@ -21,10 +21,7 @@ public class AuthFilter implements Filter {
     @Autowired
     private UserService userService;
 
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-     
-    }
+   
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
